@@ -1,0 +1,61 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.bg-image{
+    /* image used */
+    background-image: url("../img/a1.jpg");
+    /*blur effect*/
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    /* height */
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: aqua;
+    background-size: cover;
+}
+
+.heighttext{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Registarion Form */
+
+.reg_form{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* making the page responsive start*/
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+
+  /* making the page responsive end */
